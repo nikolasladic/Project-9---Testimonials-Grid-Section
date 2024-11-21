@@ -1,0 +1,85 @@
+/****************************/
+/* MOBILE DESIGN */
+/* @media (max-width: 375px) { */
+* {
+  margin: 0;
+  font-family: "Barlow Semi Condensed";
+}
+
+body {
+  background-color: #ecf2f8;
+  width: 375px;
+}
+
+.all-sections {
+  width: 23.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  margin: 24px;
+  border-radius: 0.5em;
+  padding: 2em;
+}
+
+.section-1 {
+  width: 16.5em;
+  height: 23.75em;
+  background-color: #733fc8;
+  background-image: url(images/bg-pattern-quotation.svg);
+  color: white;
+}
+
+header {
+  display: flex;
+  height: 1.8em;
+}
+
+.users-picture {
+  border-radius: 50%;
+  height: 1.75em;
+  padding-right: 17px;
+}
+
+.users-name,
+.users-status {
+  font-size: 0.8125em;
+  font-weight: 500;
+  color: white;
+}
+
+.users-status {
+  opacity: 50%;
+}
+
+.users-review {
+  font-size: 1.25em;
+  font-weight: 600;
+  padding-top: 1.5em;
+}
+
+.users-expirience {
+  opacity: 70%;
+  font-size: 13px;
+  padding-top: 16px;
+  line-height: 18px;
+}
+
+.user-exp-1 {
+  padding-top: 42px;
+}
+
+.section-2 {
+  background-color: #48556a;
+}
+
+.section-3,
+.section-5 {
+  background-color: #fff;
+}
+
+.section-4 {
+  background-color: #19202d;
+}
+/* } */
