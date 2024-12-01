@@ -5,16 +5,23 @@
 
 body {
   background-color: hsl(210, 46%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .all-sections {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  margin: 71px 24px;
+}
+
+.users-expirience {
+  line-height: 18px;
 }
 
 .section {
   padding: 24px;
   border-radius: 8px;
+  margin-bottom: 24px;
 }
 
 .section-1 {
@@ -22,6 +29,18 @@ body {
   background-color: hsl(263, 55%, 52%);
   background-repeat: no-repeat;
   background-position: 80% 0;
+}
+
+.section-1 .users-expirience {
+  color: #cfcfcf;
+  padding-top: 2.5rem;
+  padding-right: 3.125rem;
+}
+
+.users-review {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.25rem;
 }
 
 .users-picture {
@@ -38,9 +57,22 @@ body {
   background-color: hsl(217, 19%, 35%);
 }
 
+.section-2 .users-expirience {
+  color: #fff;
+}
+
 .section-3,
 .section-5 {
   background-color: #fff;
+}
+
+.section-3 .users-name,
+.section-3 .users-review,
+.section-3 .users-status,
+.section-5 .users-name,
+.section-5 .users-status,
+.section-5 .users-review {
+  color: hsl(217, 19%, 35%);
 }
 
 .section-4 {
@@ -54,4 +86,64 @@ body {
 .users-status {
   color: #fff;
   opacity: 50%;
+}
+
+.users-review {
+  padding-top: 1.125rem;
+}
+
+.users-expirience {
+  padding-top: 1.25rem;
+  font-size: 13px;
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+}
+
+@media (min-width: 640px) {
+  .all-sections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+  }
+}
+
+@media (min-width: 1280px) {
+  body,
+  html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .all-sections {
+    margin: 0px;
+  }
+
+  .all-sections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .section-1 {
+    grid-column: 1/3;
+  }
+
+  .section-1 .users-expirience {
+    padding-top: 10px;
+  }
+
+  .section-3 {
+    grid-row: 2/2;
+  }
+
+  .section-4 {
+    grid-row: 2/2;
+    grid-column: 2/4;
+  }
+
+  .section-5 {
+    grid-column: 4/5;
+    grid-row: 1/3;
+  }
 }
